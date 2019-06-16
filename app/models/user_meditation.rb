@@ -1,0 +1,2 @@
+class UserMeditation < ApplicationRecord
+end
