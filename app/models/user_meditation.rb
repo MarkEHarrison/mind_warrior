@@ -1,6 +1,6 @@
 class UserMeditation < ApplicationRecord
 
   belongs_to :meditation
-  belongs_to :users
+  belongs_to :user
   
 end
