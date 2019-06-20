@@ -21,7 +21,7 @@ class Api::UsersController < ApplicationController
   end
 
   def show
-    user_id = params[:id]
+    # user_id = params[:id]
     @user = current_user
     render 'show.json.jbuilder'
   end
