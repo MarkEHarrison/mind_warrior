@@ -17,4 +17,6 @@ User.create!([
   {first_name: "Mark", last_name: "Harrison", email: "mhworld11@icloud.com", password_digest: ""}
 ])
 
-
+Meditation.create!([
+  {title: "3_min_breath", type: "Breath", length: 3.35}
+])
