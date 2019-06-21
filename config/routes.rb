@@ -19,6 +19,9 @@ Rails.application.routes.draw do
     post "/user_meditations" => "user_meditations#create"
     delete "/user_meditations/:id" => "user_meditations#destroy"
 
+    #NEWS ROUTES
+    get "/news" => "news#index"
+
 
 
 
