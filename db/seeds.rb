@@ -18,7 +18,7 @@ User.create!([
 ])
 
 Meditation.create!([
-  {title: "3_min_breath", practice: "Breath", length: 3.35}
+  {title: "3_min_breath", practice: "Breath", length: 3.35, image_url: "https://i.pinimg.com/originals/1b/ff/cb/1bffcb8c700e4c233b88e165cfb1edbc.jpg"}
 ])
 
 UserMeditation.create!([
