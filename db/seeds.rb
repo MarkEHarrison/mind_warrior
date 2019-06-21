@@ -13,10 +13,14 @@
 
 
 
-User.create!([
-  {first_name: "Mark", last_name: "Harrison", email: "mhworld11@icloud.com", password_digest: ""}
-])
+# User.create!([
+#   {first_name: "Mark", last_name: "Harrison", email: "mhworld11@icloud.com", password_digest: ""}
+# ])
 
 Meditation.create!([
-  {title: "3_min_breath", type: "Breath", length: 3.35}
+  {title: "3_min_breath", practice: "Breath", length: 3.35}
+])
+
+UserMeditation.create!([
+  {user_id: 2, meditation_id: 1}
 ])

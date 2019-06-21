@@ -1,0 +1,1 @@
+json.partial! "meditation.json.jbuilder", meditation: @meditation

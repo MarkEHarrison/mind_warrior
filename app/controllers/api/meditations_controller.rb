@@ -18,11 +18,11 @@ class Api::MeditationsController < ApplicationController
     render 'index.json.jbuilder'
   end
 
-  # def show
-  #   product_id = params[:id]
-  #   @product = Product.find_by(id: product_id) #a hash of product data
-  #   render 'show.json.jbuilder'
-  # end
-  # end
+  def show
+    meditation_id = params[:id]
+    @meditation = Meditation.find_by(id: meditation_id) #a hash of meditation data
+    render 'show.json.jbuilder'
+  end
+  
 
 end
