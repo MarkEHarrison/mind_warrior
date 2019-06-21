@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     delete "/user_meditations/:id" => "user_meditations#destroy"
 
     #NEWS ROUTES
-    get "/news" => "news#index"
+    get "/articles" => "articles#index"
 
 
 
