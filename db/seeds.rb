@@ -13,9 +13,9 @@
 
 
 
-# User.create!([
-#   {first_name: "Mark", last_name: "Harrison", email: "mhworld11@icloud.com", password_digest: ""}
-# ])
+User.create!([
+  {first_name: "Mark", last_name: "Harrison", email: "mhworld11@icloud.com", password: "password", password_confirmation: "password"}
+])
 
 Meditation.create!([
   {title: "3_min_breath", practice: "Breath", length: 3.35}
