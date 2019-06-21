@@ -1,7 +1,8 @@
 class Api::UserMeditationsController < ApplicationController
-
+#NO CONTROLLER FOR INDEX
   # def index
-  #   @user_meditation =
+  #   @user_meditation = current_user.id
+
     
   # end
 
@@ -12,7 +13,7 @@ class Api::UserMeditationsController < ApplicationController
     )
 
     if @user_meditation.save
-      render 'show.json.jbuilder'
+      render json: {message: "Success"}
     else
       render json: {errors: @user_meditation.errors.full_messages}, status: :unprocessable_entity
     end

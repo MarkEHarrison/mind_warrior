@@ -1,19 +1,19 @@
 class Api::MeditationsController < ApplicationController
 
   def index
-    @meditations = Meditation.all.order(:id)
+    @meditations = Meditation.all
 
-    if params[:search]
-      @meditations = @meditations.where("name iLIKE ?", "%#{params[:search]}%")
-    end
+    # if params[:search]
+    #   @meditations = @meditations.where("name iLIKE ?", "%#{params[:search]}%")
+    # end
 
-    if params[:sort] == "length"
-      if params[:sort_order] == "desc"
-        @meditations = @meditations.order(length: :desc)
-      else
-        @meditations = @meditations.order(:length)
-      end
-    end
+    # if params[:sort] == "length"
+    #   if params[:sort_order] == "desc"
+    #     @meditations = @meditations.order(length: :desc)
+    #   else
+    #     @meditations = @meditations.order(:length)
+    #   end
+    # end
 
     render 'index.json.jbuilder'
   end
