@@ -18,9 +18,9 @@ User.create!([
 ])
 
 Meditation.create!([
-  {title: "3_min_breath", practice: "Breath", length: 3.35, image_url: "https://i.pinimg.com/originals/1b/ff/cb/1bffcb8c700e4c233b88e165cfb1edbc.jpg"}
+  {title: "3 minute breathing meditation", practice: "Breath", length: 3.35, image_url: "https://i.pinimg.com/originals/1b/ff/cb/1bffcb8c700e4c233b88e165cfb1edbc.jpg"}
 ])
 
 UserMeditation.create!([
-  {user_id: 2, meditation_id: 1}
+  {user_id: 1, meditation_id: 1}
 ])
