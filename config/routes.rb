@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   get "/users/:id/edit" => "users#edit"
   delete "/users/:id" => "users#destroy"
 
-  #USER MEDITATIONS
+  #USER MEDITATIONS FRONT END
   get "/user_meditations" => "user_meditations#index"
   post "/user_meditations" => "user_meditations#create"
   delete "/user_meditations/:id" => "user_meditations#destroy"
