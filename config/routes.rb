@@ -42,5 +42,8 @@ Rails.application.routes.draw do
   #MEDITATION FRONT END
   get "/meditations" => "meditations#index"
 
+  #NEWS FRONT END
+  
+
 
 end
