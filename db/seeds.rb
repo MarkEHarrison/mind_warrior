@@ -14,7 +14,7 @@
 
 
 User.create!([
-  {first_name: "Mark", last_name: "Harrison", email: "mhworld11@icloud.com", password: "password", password_confirmation: "password"}
+  {first_name: "Mimi", last_name: "G", email: "mimi@gmail.com", password: "password", password_confirmation: "password"}
  ])
 
 Meditation.create!([
