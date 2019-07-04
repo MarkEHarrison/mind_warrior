@@ -23,6 +23,13 @@ Rails.application.routes.draw do
 
     #NEWS ROUTES
     get "/articles" => "articles#index"
+    #TWITTER
+    post "/twitter_authorize" => "pages#twitter_authorize"
+
+    #SPOTIFY
+    get "/spotify_authorize" => "spotify#spotify_authorize"
+    get  "/spotify/callback" => "spotify#spotify_callback"
+
     
   end
   #Front End
