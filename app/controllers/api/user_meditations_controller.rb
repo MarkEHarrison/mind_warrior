@@ -10,6 +10,7 @@ class Api::UserMeditationsController < ApplicationController
     @user_meditation = UserMeditation.new(
       user_id: current_user.id,
       meditation_id: params[:meditation_id],
+      
     )
 
     if @user_meditation.save
@@ -17,6 +18,7 @@ class Api::UserMeditationsController < ApplicationController
     else
       render json: {errors: @user_meditation.errors.full_messages}, status: :unprocessable_entity
     end
+    
   end
 
   def destroy

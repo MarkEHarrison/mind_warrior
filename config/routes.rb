@@ -49,7 +49,8 @@ Rails.application.routes.draw do
   #MEDITATION FRONT END
   get "/meditations" => "meditations#index"
 
-  #NEWS FRONT END
+  #SPOTIFY
+  get "/spotify_authorize" => "spotify#spotify_authorize"
   
 
 
