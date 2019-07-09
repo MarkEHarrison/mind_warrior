@@ -22,10 +22,12 @@ class Api::UserMeditationsController < ApplicationController
   end
 
   def destroy
-    @user_meditation = UserMeditation.find(params[:id])
+    @user_meditation = UserMeditation.find_by(meditation_id:params[:id])
+    @user_meditation.destroy
     
     render json: {message: "User Meditation successfully removed"}
   end
+
 
 
 
