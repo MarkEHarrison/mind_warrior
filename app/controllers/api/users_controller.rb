@@ -9,6 +9,9 @@ class Api::UsersController < ApplicationController
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
+      acrt: params[:acrt],
+      range_qualification: params[:range_qualification],
+      twelve_mile: params[:twelve_mile],
       password: params[:password],
       password_confirmation: params[:password_confirmation]
     )
@@ -33,6 +36,9 @@ class Api::UsersController < ApplicationController
     @user.first_name = params[:first_name] || @user.first_name
     @user.last_name = params[:last_name] || @user.last_name
     @user.email = params[:email] || @user.email
+    @user.acrt = params[:acrt] || @user.acrt
+    @user.range_qualification = params[:range_qualification] || @user.range_qualification
+    @user.twelve_mile = params[:twelve_mile] || @user.twelve_mile
 
     if @user.save
       render 'show.json.jbuilder'
